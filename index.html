@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function validateEmail(email) {
+            RegExp = /^[a-zA-Z0-9]+[a-zA-z0-9]*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]{3})$/
+            if (RegExp.test(email)) {
+                console.log('email hop le');
+            } else {
+                console.log("email khong hop le!")
+            };
+        }
+
+        let email1 = 'nbthanh98@gmail.com';
+
+        validateEmail(email1);
+    </script>
+</body>
+
+</html>
